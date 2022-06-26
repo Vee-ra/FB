@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>signUp & loginForm</title>
+</head>
+<body>
+    <div class="box">
+        <!-- float - left -->
+    <div class="partition1">
+        <div class="signUp_Top">
+            <h2 class="txt1"><b>Sign Up</b></h2>
+            <h5 class="txt2">It's quick and easy.</h5>
+            <hr class="hr">
+        </div>
+        <script src="scriptss.js" type="text/javascript"></script>
+        <!--Sign Up Form starts here-->
+    <form class="sUF" onsubmit="return false;">
+        <span class="nameField">
+        <input type="text" class="names" placeholder="First name" name="t3" id="n1">
+        <input type="text" class="names" placeholder="Surname" name="t2" id="n2">
+        </span>
+        <input type="text" class="mobile" placeholder="Mobile number or Email address" name="t3" id="m1"><br>
+        <input type="password" class="mobile" placeholder="New password" name="t4" id="p1"><br>
+        <h6 class="textDOB" id="DOB_field">Date of Birth?</h6><br>
+        <span class="dobMainSpan">
+            <span>
+                    <select name="dob" id="day" class="dobSubSpan">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </span>
+                    <span>
+                    <select name="month" id="month" class="dobSubSpan">
+                        <option value="jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                    </select>
+                </span>
+                    <span>
+                    <select name="year" id="year" class="dobSubSpan">
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </select>
+                </span>
+                </span>            
+        <!--Gender section-->
+        <h6 class="genderSelector">Gender?</h6>
+        <!--main Span-->
+    <span class="mainSpan">
+        <!--sub Span-->    
+        <span class="subSpan">
+            <label class="label" for="Female">Female</label>
+            <input type="radio" id="Female" class="radioBtn" name="sex" value="Female">
+            </span>
+        <span class="subSpan">
+            <label class="label" for="Male">Male</label>
+            <input type="radio" id="Male" class="radioBtn" name="sex" value="Male">
+            </span>
+        <span class="subSpan">
+            <label class="label" for="Custom">Custom</label>
+            <input type="radio" id="Custom" class="radioBtn" name="sex" value="Custom">
+            </span>
+    </span>
+        <button class="signUpButton" style="color:whitesmoke" onclick="signUpValidation()"><b>Sign Up<b></b></button>
+    </form>
+    </div>
+</div>
+<div>
+<!--float - right-->
+<div class="partition2">
+<!--Login Form starts here-->
+<form class="lForm" name="loginForm">
+    <input type="text" class="Email_Pno_Pwd" id="l1" placeholder="Email address or phone number"><br>
+    <input type="password" class="Email_Pno_Pwd" id="l2"  placeholder="Password"><br>
+    <!--JS Method calling-->
+    <button class="loginBtn" style="color:whitesmoke" onclick="login()"><strong>Log In</strong></button>
+    <h3 class="forgetPwd"><a href="Forgotten password?">Forgotten password?</a></h3>
+    <hr>
+    <button class="cNA" style="color:whitesmoke" type="submit" ><a href ="">Create New Account</a></button>
+</form>
+    <h3 class="fC"><a>Create a Page</a> for a celebrity, brand or business.</h3>
+</div>
+</div>
+
+</body>
+</html>
